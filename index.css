@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto; /* Centre le tableau */
+    border-collapse: collapse; /* Fusionne les doubles bordures */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+th {
+    background-color: #2b7cb2; 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+/* Effet au survol des lignes */
+tbody tr:hover {
+    background-color: #f1f9ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Aligner les prix et les stocks à droite pour faire plus propre */
+td:nth-child(3), th:nth-child(3),
+td:nth-child(4), th:nth-child(4) {
+    text-align: center;
+}
+
+
+
