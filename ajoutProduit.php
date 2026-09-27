@@ -15,9 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST"){
 // 2. Exécute la fonction la plus à l'intérieur : trim() - nettoie les espaces en trop
 // 3. Donne le résultat nettoyé à fonction englobante : htmlspecialchars() - Empêche le navigateur d'interpréter du code malveillant injecté par un utilisateur
 // 4. Stocke le résultat final dans la variable $nom.
-$nom = htmlspecialchars(trim($_POST['nom']));
-$prix = htmlspecialchars(trim($_POST['prix']));
-$stock = htmlspecialchars(trim($_POST['stock']));
+$nom = (trim($_POST['nom']));
+$prix = (trim($_POST['prix']));
+$stock = (trim($_POST['stock']));
 
 
 // VALIDATION DU FORMULAIRE

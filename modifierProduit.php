@@ -21,9 +21,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])){
     if ($_SERVER['REQUEST_METHOD'] === "POST"){
 
         // RECUPERE LES NOUVELLES DONNES TAPEES DANS LE FORMULAIRE (comme dans ajoutProduot.php)
-        $nom = htmlspecialchars(trim($_POST['nom']));
-        $prix = htmlspecialchars(trim($_POST['prix']));
-        $stock = htmlspecialchars(trim($_POST['stock']));
+        $nom = (trim($_POST['nom']));
+        $prix = (trim($_POST['prix']));
+        $stock = (trim($_POST['stock']));
 
         // Prépare la requête pour la modification
         $updateQuery = "UPDATE produits SET nom = :nom, prix = :prix, stock = :stock WHERE id = :id"; 
